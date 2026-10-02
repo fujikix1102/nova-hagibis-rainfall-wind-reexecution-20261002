@@ -1,0 +1,87 @@
+{
+  "execution_timestamp_utc": "2026-10-02T07:42:08.905445+00:00",
+  "bundle_path": "/Volumes/1tbinside/NOVA/external_data/real_events/typhoon_hagibis_2019/metadata/hagibis_wind_rainfall_integrated_20261002.json",
+  "bundle_sha256": "4df6e6aada786528572871535939c8febcc0db83245538133782d8c10b9e88cc",
+  "runner": "run_event_audit_v1",
+  "result": {
+    "execution_status": "COMPLETED",
+    "numerical_stability": {
+      "status": "COMPLETED",
+      "finite_values": true
+    },
+    "identifiability": {
+      "status": "NOT_APPLICABLE_DESCRIPTIVE_EVENT_JOIN"
+    },
+    "uncertainty": {
+      "status": "EXPLORATORY_ONLY"
+    },
+    "residual_diagnostics": {
+      "status": "NOT_APPLICABLE_NO_PREDICTIVE_RESIDUAL_MODEL"
+    },
+    "physical_constraints": {
+      "status": "NOT_APPLICABLE_DESCRIPTIVE_WEATHER_CONTEXT"
+    },
+    "provenance": {
+      "path": "/Volumes/1tbinside/NOVA/external_data/real_events/typhoon_hagibis_2019/metadata/hagibis_wind_rainfall_integrated_20261002.json",
+      "sha256": "4df6e6aada786528572871535939c8febcc0db83245538133782d8c10b9e88cc",
+      "source_integrity": "PASS",
+      "time_standard": "UTC calendar day for both IBTrACS and GPM"
+    },
+    "claim_boundary": {
+      "descriptive_comparison_allowed": true,
+      "causal_claim": false,
+      "formal_pass": false
+    },
+    "implementation": {
+      "implementation_present": true,
+      "unit_test_present": true,
+      "integration_test_present": true,
+      "production_entrypoint_present": true,
+      "runtime_callback_present": true,
+      "real_output_observed": true
+    },
+    "audit_status": "RECORDED",
+    "reason": null,
+    "missing": [],
+    "formal_pass": false,
+    "routing": {
+      "problem_classes": [
+        "meteorology"
+      ],
+      "executable": true,
+      "data_sufficient": true,
+      "solver_available": true,
+      "identifiability_possible": true,
+      "external_validation_available": false,
+      "claim_level": "exploratory",
+      "status": "READY",
+      "reason": "ROUTABLE_LOCAL_ANALYSIS",
+      "plan": [
+        "input_contract",
+        "provenance",
+        "forward_solver",
+        "inverse_solver",
+        "rank_condition_correlation",
+        "uncertainty",
+        "holdout",
+        "claim_boundary"
+      ],
+      "adapter_selection": {
+        "adapter_id": "meteorological_event_adapter_v1.MeteorologicalEventAdapterV1",
+        "required_inputs": [
+          "jma_event_record",
+          "gpm_precipitation",
+          "ibtracs_wind_track"
+        ],
+        "time_standard": "UTC"
+      },
+      "additional_analysis_plan": {
+        "status": "NOT_PROVIDED",
+        "formal_pass": false,
+        "actions": []
+      }
+    }
+  },
+  "formal_pass": false
+}
+
