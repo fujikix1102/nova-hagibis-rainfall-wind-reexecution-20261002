@@ -15,3 +15,5 @@ jobs:
           python-version: '3.12'
       - name: Verify published bundle
         run: python scripts/verify_bundle.py
+      - name: Verify third-party bundle
+        run: python scripts/verify_reexecution.py
