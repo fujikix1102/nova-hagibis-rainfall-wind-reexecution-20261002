@@ -1,0 +1,120 @@
+{
+  "execution_status": "COMPLETED",
+  "source_integrity": "PASS",
+  "time_standard": "UTC calendar day for both IBTrACS and GPM",
+  "wind_units": "WMO_WIND kts; WMO_PRES mb",
+  "rain_units": "GPM precipitation mm/day",
+  "spatial_domain": {
+    "lat": [
+      30,
+      42
+    ],
+    "lon": [
+      135,
+      145
+    ]
+  },
+  "daily_results": [
+    {
+      "utc_date": "2019-10-10",
+      "record_count": 8,
+      "max_wmo_wind_kts": 105.0,
+      "min_wmo_pressure_mb": 915.0,
+      "strongest_record_time_utc": "2019-10-10 00:00:00",
+      "strongest_lat": 23.2,
+      "strongest_lon": 139.9,
+      "gpm_status": "PASS",
+      "gpm_file_sha256": "2af6cd023ddd1078399ac1523fdfc45e4efa6706fbb6d44a89bd63ce0881c371",
+      "gpm_max_rainfall_mm_day": 126.20500183105469,
+      "gpm_peak_lat": 30.05,
+      "gpm_peak_lon": 137.35000610351562,
+      "distance_track_peak_to_gpm_peak_km": 802.6702033148159,
+      "track_proximity_radius_deg": 2.0,
+      "track_proximity_mean_mm_day": 73.1763916015625,
+      "track_proximity_p95_mm_day": 189.50196838378906,
+      "track_proximity_max_mm_day": 272.4649658203125,
+      "track_proximity_valid_cells": 2597
+    },
+    {
+      "utc_date": "2019-10-11",
+      "record_count": 8,
+      "max_wmo_wind_kts": 90.0,
+      "min_wmo_pressure_mb": 935.0,
+      "strongest_record_time_utc": "2019-10-11 00:00:00",
+      "strongest_lat": 27.5,
+      "strongest_lon": 138.0,
+      "gpm_status": "PASS",
+      "gpm_file_sha256": "b2ca457042bc4b9eb63dbff6782ba290223be89a93fdd601de80789cd9e442d3",
+      "gpm_max_rainfall_mm_day": 207.2149658203125,
+      "gpm_peak_lat": 32.35000000000001,
+      "gpm_peak_lon": 136.64999389648438,
+      "distance_track_peak_to_gpm_peak_km": 554.7479739339734,
+      "track_proximity_radius_deg": 2.0,
+      "track_proximity_mean_mm_day": 72.05056762695312,
+      "track_proximity_p95_mm_day": 167.7279815673828,
+      "track_proximity_max_mm_day": 207.2149658203125,
+      "track_proximity_valid_cells": 2895
+    },
+    {
+      "utc_date": "2019-10-12",
+      "record_count": 8,
+      "max_wmo_wind_kts": 80.0,
+      "min_wmo_pressure_mb": 950.0,
+      "strongest_record_time_utc": "2019-10-12 00:00:00",
+      "strongest_lat": 32.1,
+      "strongest_lon": 137.4,
+      "gpm_status": "PASS",
+      "gpm_file_sha256": "3761cf39ad0053fcc6cc4cbdf26ddd2b4e2295e0d66ed97b59c5efdd97da9db7",
+      "gpm_max_rainfall_mm_day": 270.6699523925781,
+      "gpm_peak_lat": 38.750000000000014,
+      "gpm_peak_lon": 138.85000610351562,
+      "distance_track_peak_to_gpm_peak_km": 750.995108150696,
+      "track_proximity_radius_deg": 2.0,
+      "track_proximity_mean_mm_day": 71.1639633178711,
+      "track_proximity_p95_mm_day": 179.15374755859375,
+      "track_proximity_max_mm_day": 264.2200012207031,
+      "track_proximity_valid_cells": 5106
+    },
+    {
+      "utc_date": "2019-10-13",
+      "record_count": 8,
+      "max_wmo_wind_kts": 60.0,
+      "min_wmo_pressure_mb": 975.0,
+      "strongest_record_time_utc": "2019-10-13 00:00:00",
+      "strongest_lat": 40.0,
+      "strongest_lon": 145.0,
+      "gpm_status": "PASS",
+      "gpm_file_sha256": "6015790edfc9d3601e9989daa8c4cdf406f28ce24569dbf7bad376ba818cfae9",
+      "gpm_max_rainfall_mm_day": 12.524999618530273,
+      "gpm_peak_lat": 34.05,
+      "gpm_peak_lon": 140.4499969482422,
+      "distance_track_peak_to_gpm_peak_km": 774.8909485103533,
+      "track_proximity_radius_deg": 2.0,
+      "track_proximity_mean_mm_day": 22.15125846862793,
+      "track_proximity_p95_mm_day": 70.07999420166016,
+      "track_proximity_max_mm_day": 102.2650146484375,
+      "track_proximity_valid_cells": 5659
+    }
+  ],
+  "interpretation": {
+    "allowed": "descriptive temporal and spatial comparison only, including track-proximity rainfall",
+    "not_allowed": [
+      "rainfall causality from wind",
+      "station-level measurement accuracy",
+      "hazard prediction",
+      "return-period inference"
+    ]
+  },
+  "quality_gates": {
+    "missing_daily_files": false,
+    "nonfinite_observed_values": false,
+    "formal_pass": false,
+    "track_proximity_join": "PASS"
+  },
+  "source_hashes": {
+    "ibtracs_filtered_csv": "bd9ba59e6f52b95704cc21d26eea16aeeeddaa726e99a962403acb0064633e3f",
+    "ibtracs_all_csv": "97cbc6fed96e389b27bda5d2273ed79c7948a40b8b73fb0650abf32059481962"
+  },
+  "track_proximity_definition": "cells within 2.0 coordinate degrees of same-day IBTrACS track points"
+}
+
