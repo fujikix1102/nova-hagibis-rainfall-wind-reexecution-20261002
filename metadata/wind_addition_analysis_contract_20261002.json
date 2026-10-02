@@ -1,0 +1,26 @@
+{
+  "event": "Typhoon Hagibis 2019",
+  "status": "CONTRACT_FIXED",
+  "purpose": "independent meteorological context for rainfall analysis",
+  "wind_role": "descriptive_covariate_and_event_context",
+  "allowed_analysis": [
+    "time alignment with rainfall",
+    "spatial distribution comparison",
+    "lagged association",
+    "track proximity comparison"
+  ],
+  "causal_claim_allowed": false,
+  "rainfall_causality_claim_allowed": false,
+  "required_provenance": [
+    "source_url",
+    "retrieval_timestamp",
+    "source_sha256",
+    "units",
+    "grid_or_station_definition",
+    "time_standard",
+    "missing_value_policy"
+  ],
+  "preferred_source": "official reanalysis or official meteorological observation",
+  "formal_pass": false
+}
+
