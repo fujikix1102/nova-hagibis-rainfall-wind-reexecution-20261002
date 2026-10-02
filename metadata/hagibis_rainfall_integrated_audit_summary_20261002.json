@@ -1,0 +1,82 @@
+{
+  "event": "Typhoon Hagibis (1919), October 2019",
+  "scope": "JMA official rainfall records and NASA GPM IMERG daily precipitation",
+  "integrated_artifacts": [
+    {
+      "file": "/Volumes/1tbinside/NOVA/external_data/real_events/typhoon_hagibis_2019/metadata/gpm_hagibis_cumulative_top_cells_20261002.json",
+      "sha256": "a53489d1c4d48a3feb1b8c94fb9e8096438b0ca3bcf5c3a8ffbe85eb69faa480",
+      "status": "COMPLETED",
+      "formal_pass": false
+    },
+    {
+      "file": "/Volumes/1tbinside/NOVA/external_data/real_events/typhoon_hagibis_2019/metadata/gpm_hagibis_japan_bbox_top_cells_20261002.json",
+      "sha256": "e230fc415459a3ea0ee744e456fa1d2af12c123fe1441e2ba31d468d88eb613f",
+      "status": "COMPLETED",
+      "formal_pass": false
+    },
+    {
+      "file": "/Volumes/1tbinside/NOVA/external_data/real_events/typhoon_hagibis_2019/metadata/gpm_hagibis_regional_analysis_20261002.json",
+      "sha256": "54f96e0c0da4297552283df87047af7083fa808eab2622569aaa19a4b16d200d",
+      "status": null,
+      "formal_pass": false
+    },
+    {
+      "file": "/Volumes/1tbinside/NOVA/external_data/real_events/typhoon_hagibis_2019/metadata/gpm_hagibis_track_proximity_analysis_20261002.json",
+      "sha256": "ff27375a7f9f4ccdb58b37b1dea678bc7f9d84212352a7c34df53ba2c71cfe1b",
+      "status": null,
+      "formal_pass": false
+    },
+    {
+      "file": "/Volumes/1tbinside/NOVA/external_data/real_events/typhoon_hagibis_2019/metadata/gpm_hagibis_track_vs_region_comparison_20261002.json",
+      "sha256": "6351c357cd5d16ca513f0b11767de76a4fd8c91cef43034097914d1f281f568e",
+      "status": null,
+      "formal_pass": false
+    },
+    {
+      "file": "/Volumes/1tbinside/NOVA/external_data/real_events/typhoon_hagibis_2019/metadata/gpm_structure_audit_20261002.json",
+      "sha256": "e34eeb8217aa8e8eb9ae3d3a86bb5f5e21f0513d69bd1c6f544fe9ec49f6e93d",
+      "status": null,
+      "formal_pass": false
+    },
+    {
+      "file": "/Volumes/1tbinside/NOVA/external_data/real_events/typhoon_hagibis_2019/metadata/hagibis_rainfall_cross_source_comparison_20261002.json",
+      "sha256": "964feb36eb85dd42a5d1ae1d2508ba74f1f341f496b827766cee73a2ead8d39c",
+      "status": null,
+      "formal_pass": false
+    },
+    {
+      "file": "/Volumes/1tbinside/NOVA/external_data/real_events/typhoon_hagibis_2019/metadata/time_alignment_manifest_20261002.json",
+      "sha256": "da345ab7ce2d8403a381c3a03ea022e950ac91232777f00927c0fcaeaa3aaab7",
+      "status": null,
+      "formal_pass": false
+    }
+  ],
+  "time_contract": {
+    "jma_csv_interpretation": "UTC source timestamps; JST=UTC+09",
+    "gpm_daily_period_utc": [
+      "2019-10-10",
+      "2019-10-13"
+    ],
+    "analysis_window_note": "Daily GPM files are UTC calendar days; no JST boundary mixing in computed comparisons"
+  },
+  "established": [
+    "source files downloaded and SHA-256 recorded",
+    "GPM structure and units audited",
+    "JMA track and rainfall summaries recorded",
+    "Japan-bbox and track-proximity rainfall fields computed",
+    "cross-source comparison recorded as descriptive only"
+  ],
+  "blocked_or_unverified": [
+    "station-level JMA-to-GPM matching because station coordinates are absent from downloaded aggregate CSV",
+    "wind field analysis not included",
+    "measurement calibration and formal uncertainty not established"
+  ],
+  "claim_boundary": [
+    "descriptive event rainfall distribution only",
+    "no causal attribution",
+    "no station-level sensor accuracy claim",
+    "no formal extreme-event return-period claim"
+  ],
+  "formal_pass": false
+}
+
