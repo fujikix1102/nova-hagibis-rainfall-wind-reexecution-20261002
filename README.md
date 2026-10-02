@@ -29,3 +29,7 @@ Use the JSON ledgers in `metadata/` to reproduce the fixed time basis, units, bo
 ## License and reuse
 
 Source data remain subject to their original terms. This repository contains audit metadata and derived descriptive outputs.
+
+## Production adapter audit
+
+The NOVA production audit record is in `metadata/nova_meteorology_production_audit_20261002_v1.json`. It records the meteorology adapter selection, input bundle SHA-256, UTC execution timestamp, and fail-closed claim boundary.
