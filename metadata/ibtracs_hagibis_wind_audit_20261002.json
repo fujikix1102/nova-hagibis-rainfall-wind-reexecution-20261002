@@ -1,0 +1,28 @@
+{
+  "source_file_sha256": "bd9ba59e6f52b95704cc21d26eea16aeeeddaa726e99a962403acb0064633e3f",
+  "event": "HAGIBIS",
+  "season": 2019,
+  "rows_total": 86,
+  "analysis_rows_utc_2019-10-09_to_14": 48,
+  "fields": {
+    "WMO_WIND_units": "kts",
+    "WMO_PRES_units": "mb",
+    "USA_WIND_units": "kts",
+    "ISO_TIME": "UTC"
+  },
+  "analysis_max_wmo_wind_kts": 105.0,
+  "analysis_min_wmo_pressure_mb": 915.0,
+  "claim_boundary": "descriptive_wind_context_only",
+  "formal_pass": false,
+  "source_url": "https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r01/access/csv/ibtracs.ALL.list.v04r01.csv",
+  "retrieval_timestamp_utc": "2026-10-02T07:23:09.254189+00:00",
+  "filter_contract": {
+    "season": 2019,
+    "name": "HAGIBIS",
+    "utc_date_range": [
+      "2019-10-09",
+      "2019-10-14"
+    ]
+  }
+}
+
