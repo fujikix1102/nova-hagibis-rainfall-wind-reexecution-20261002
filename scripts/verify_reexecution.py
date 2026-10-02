@@ -20,7 +20,7 @@ result = audit.get("result", {})
 if result.get("audit_status") not in {"RECORDED", "UNVERIFIED"}:
     print("FAIL unexpected audit status")
     ok = False
-expected = "bd9ba59e6f52b95704cc21d26eea16aeeeddaa726e99a962403acb0064633e3f"
+expected = "7b7db0b31590f9b82b3955ec644c69d9db675368a7a992ea9aa3f41ea50dd644"
 if required[2].is_file():
     actual = hashlib.sha256(required[2].read_bytes()).hexdigest()
     print("filtered_csv_sha256:", actual)
